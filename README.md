@@ -84,7 +84,7 @@ To ensure you can create a release appropriately, make a single small change to 
 `SeniorThesisProposalUpdate.tex` and:
 
 1. `commit` your file using a `git commit` command
-2. create your first tag for this repository: type `git tag senior_thesis_proposal_update-YOUR_USERNAME-0.1.0`. 
+2. create your first tag for this repository: type `git tag SeniorThesisProposalUpdate-YOUR_USERNAME-0.1.0`. 
 3. You are now ready to push your changes with the tag number using  `git push -u origin main --tags`
 
 The above steps should build a version of your project.
