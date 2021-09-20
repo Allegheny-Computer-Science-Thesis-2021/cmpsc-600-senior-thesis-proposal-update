@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+
+\newcommand{\assignmentduedate}{October 4}
+\newcommand{\assignmentassignedate}{September 20}
+\newcommand{\assignmentnumber}{Two}
+
+\newcommand{\labyear}{2021}
+\newcommand{\labday}{Monday}
+\newcommand{\labtime}{1:30 pm}
+
+\newcommand{\assigneddate}{Assigned: \labday, \assignmentassignedate, \labyear{}}
+\newcommand{\duedate}{Due: \labday, \assignmentduedate, \labyear{} at \labtime{}}
+
+\usepackage{pifont}
+\newcommand{\checkmark}{\ding{51}}
+\newcommand{\naughtmark}{\ding{55}}
+
+\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  columns=flexible,
+  breaklines=true
+}
+
+\usepackage{fancyhdr}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\rhead{Computer Science 600}
+\lhead{Project Assignment \assignmentnumber{}}
+\rfoot{Page \thepage}
+\lfoot{\duedate}
+
+\usepackage{titlesec}
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+\newcommand{\projecttitle}[1]
+{
+  \begin{center}
+    \begin{center}
+      \bf
+      CMPSC 600\\Senior Thesis I\\
+      Fall 2021\\
+      \medskip
+    \end{center}
+    \bf
+    #1
+  \end{center}
+}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\projecttitle{Project \assignmentnumber{} \\ \assigneddate{} \\ \duedate{}}
+
+% TODO: Add a title for your senior thesis
+\section*{Senior Thesis Title}
+
+\noindent
+Title
+
+% TODO: Include your own thesis proposal abstract
+\section*{Senior Thesis Abstract}
+
+
+% TODO: List your accomplishments towards demonstrating feasibility
+\section*{Demonstrations of Feasibility}
+
+\begin{enumerate}
+  \item First feasibility indicator
+  \item Second feasibility indicator
+  \item Third feasibility indicator
+\end{enumerate}
+
+\end{document}
